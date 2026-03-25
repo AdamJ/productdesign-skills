@@ -1,0 +1,21 @@
+{
+  "name": "productdesigner",
+  "description": "A set of skills to assist with product design tasks and workflows, including best practices, templates, and guidance for creating high-quality designs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Adam Jolicoeur",
+    "email": "adam@productdesigns.net"
+  },
+  "homepage": "https://github.com/Product-Designs/productdesigner",
+  "repository": "https://github.com/Product-Designs/productdesigner",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "design",
+    "documentation",
+    "collaboration",
+    "best-practices",
+    "workflows",
+    "mcp"
+  ]
+}
