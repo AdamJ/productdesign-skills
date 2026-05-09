@@ -1,0 +1,53 @@
+# productdesigner — Agent Notes
+
+## What this repo is
+
+A Claude Code skills marketplace for product design workflows. Skills live in `skills/<name>/SKILL.md`
+with optional reference files in `skills/<name>/references/`.
+
+Plugin metadata: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`.
+
+---
+
+## Skills status
+
+### Shipped (in `main`)
+
+| Skill | Directory |
+|-------|-----------|
+| frontend-design | `skills/frontend-design/` |
+| interactive-diagram | `skills/interactive-diagram/` |
+| mcp-builder | `skills/mcp-builder/` |
+| mcp-server-scaffolding | `skills/mcp-server-scaffolding/` |
+| portfolio-case-study-generator | `skills/portfolio-case-study-generator/` |
+| synching-project-documentation | `skills/synching-project-documentation/` |
+
+### In progress (branch: `claude/brainstorm-new-skills-wkJrO`)
+
+| Skill | Directory | Notes |
+|-------|-----------|-------|
+| design-tokens | `skills/design-tokens/` | Three-tier token architecture; CSS vars, Tailwind v3/v4, Style Dictionary, JS ESM output formats |
+| figma-to-code | `skills/figma-to-code/` | Five-phase workflow using Figma MCP tools; references design-tokens skill for token mapping |
+
+### Proposed (not yet implemented)
+
+These were brainstormed and agreed upon — implement in priority order:
+
+| Skill | Purpose | Priority |
+|-------|---------|----------|
+| **accessibility-audit** | Audit components against WCAG 2.1 AA; output prioritized remediation checklist | High |
+| **mcp-test-suite** | Generate evaluation harness (tool call stubs, edge case fixtures, prompt tests) for an MCP server | High |
+| **data-visualization** | Self-contained D3.js/Observable charts (bar, line, scatter, sankey) with proper scales and responsive behavior | Medium |
+| **motion-design** | Purposeful CSS/JS animations and transitions with easing curves and timing guidelines | Medium |
+| **ux-copywriting** | UI microcopy — labels, empty states, error messages, onboarding tooltips — aligned to product voice | Medium |
+| **changelog-generator** | Structured CHANGELOG entry from git log, formatted by conventional commits or custom schema | Low |
+
+---
+
+## Development conventions
+
+- Active development branch: `claude/brainstorm-new-skills-wkJrO`
+- Each skill needs at minimum: `SKILL.md` with frontmatter (`name`, `description`)
+- Reference files go in `skills/<name>/references/` and are linked from SKILL.md
+- The `description` frontmatter field is the trigger — write it to fire on natural language phrases
+- New skills should cross-reference related skills (e.g. figma-to-code → design-tokens)
