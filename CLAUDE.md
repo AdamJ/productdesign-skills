@@ -13,19 +13,14 @@ Plugin metadata: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.js
 
 ### Shipped (in `main`)
 
-| Skill | Directory |
-|-------|-----------|
-| frontend-design | `skills/frontend-design/` |
-| interactive-diagram | `skills/interactive-diagram/` |
-| mcp-builder | `skills/mcp-builder/` |
-| mcp-server-scaffolding | `skills/mcp-server-scaffolding/` |
-| portfolio-case-study-generator | `skills/portfolio-case-study-generator/` |
-| synching-project-documentation | `skills/synching-project-documentation/` |
-
-### In progress (branch: `claude/brainstorm-new-skills-wkJrO`)
-
 | Skill | Directory | Notes |
-|-------|-----------|-------|
+|-------|-----------| ----- |
+| frontend-design | `skills/frontend-design/` | |
+| interactive-diagram | `skills/interactive-diagram/` | |
+| mcp-builder | `skills/mcp-builder/` | |
+| mcp-server-scaffolding | `skills/mcp-server-scaffolding/` | |
+| portfolio-case-study-generator | `skills/portfolio-case-study-generator/` | |
+| synching-project-documentation | `skills/synching-project-documentation/` | |
 | design-tokens | `skills/design-tokens/` | Three-tier token architecture; CSS vars, Tailwind v3/v4, Style Dictionary, JS ESM output formats |
 | figma-to-code | `skills/figma-to-code/` | Five-phase workflow using Figma MCP tools; references design-tokens skill for token mapping |
 
@@ -46,8 +41,10 @@ These were brainstormed and agreed upon — implement in priority order:
 
 ## Development conventions
 
-- Active development branch: `claude/brainstorm-new-skills-wkJrO`
 - Each skill needs at minimum: `SKILL.md` with frontmatter (`name`, `description`)
 - Reference files go in `skills/<name>/references/` and are linked from SKILL.md
 - The `description` frontmatter field is the trigger — write it to fire on natural language phrases
 - New skills should cross-reference related skills (e.g. figma-to-code → design-tokens)
+- Any new skills or updates to skills should increment the version numbers found in the `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` files.
+- New skills are a major increment, updates to skills are a minor increment, and changes to `CLAUDE.md` or `README.md` are patch increments.
+- New skills need to be added to the README.md file, in the "What's Included" section.
