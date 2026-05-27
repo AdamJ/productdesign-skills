@@ -1,0 +1,56 @@
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+categories:
+  - title: "Skills"
+    collapse-after: 5
+    labels:
+      - "skill"
+  - title: "Fixes"
+    collapse-after: 3
+    labels:
+      - "bug"
+      - "enhancement"
+  - title: "Documentation"
+    labels:
+      - "documentation"
+
+include-labels:
+  - "skill"
+
+exclude-labels:
+  - "skip-changelog"
+  - "github-action"
+
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+      - "skill"
+  minor:
+    labels:
+      - "minor"
+      - "fix"
+      - "bug"
+  patch:
+    labels:
+      - "patch"
+      - "documentation"
+  default: "minor"
+
+autolabeler:
+  - label: "skill"
+    files:
+      - "skills/**"
+      - "SKILL.md"
+
+template: |
+  ## Changes
+  $CHANGES
+
+  ## Contributors
+  $CONTRIBUTORS
+
+  **Full Changelog**:
+  $PREVIOUS_TAG...v$RESOLVED_VERSION
