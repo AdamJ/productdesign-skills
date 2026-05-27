@@ -12,6 +12,7 @@ Productdesigner is a complete set of skills for incorporating into your agentic 
 | [MCP Server Scaffolding](/skills/mcp-server-scaffolding/) | A plugin to scaffold MCP server projects based on user input. | Development |
 | [Portfolio Case Study Generator](/skills/portfolio-case-study-generator/) | Generate a case study based off of your current code base. | Documentation |
 | [Synching Project Documentation](/skills/syncing-project-documentation/) | Sync your docs, README, and CLAUDE files after implementing a feature or fix. | Documentation |
+| [Accessibility Audit](/skills/accessibility-audit/) | Audit components, pages, and designs against WCAG 2.1 AA and output a prioritized remediation checklist with code-level fixes. | Design |
 
 ## Installation
 

@@ -23,6 +23,7 @@ Plugin metadata: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.js
 | synching-project-documentation | `skills/synching-project-documentation/` | |
 | design-tokens | `skills/design-tokens/` | Three-tier token architecture; CSS vars, Tailwind v3/v4, Style Dictionary, JS ESM output formats |
 | figma-to-code | `skills/figma-to-code/` | Five-phase workflow using Figma MCP tools; references design-tokens skill for token mapping |
+| accessibility-audit | `skills/accessibility-audit/` | WCAG 2.1 AA audit with prioritized remediation output; contrast script; covers React, HTML, CSS tokens, Eleventy |
 
 ### Proposed (not yet implemented)
 
@@ -30,7 +31,7 @@ These were brainstormed and agreed upon — implement in priority order:
 
 | Skill | Purpose | Priority |
 |-------|---------|----------|
-| **accessibility-audit** | Audit components against WCAG 2.1 AA; output prioritized remediation checklist | High |
+| ~~**accessibility-audit**~~ | ~~Audit components against WCAG 2.1 AA; output prioritized remediation checklist~~ | ~~High~~ → **Shipped** |
 | **mcp-test-suite** | Generate evaluation harness (tool call stubs, edge case fixtures, prompt tests) for an MCP server | High |
 | **data-visualization** | Self-contained D3.js/Observable charts (bar, line, scatter, sankey) with proper scales and responsive behavior | Medium |
 | **motion-design** | Purposeful CSS/JS animations and transitions with easing curves and timing guidelines | Medium |

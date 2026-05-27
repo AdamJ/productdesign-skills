@@ -9,7 +9,7 @@
     {
       "name": "productdesigner",
       "description": "A set of skills to assist with product design tasks and workflows, including best practices, templates, and guidance for creating high-quality designs.",
-      "version": "1.0.0",
+      "version": "3.0.0",
       "source": "./",
       "author": {
         "name": "Adam Jolicoeur",
