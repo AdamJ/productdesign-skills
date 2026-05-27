@@ -24,6 +24,7 @@ Plugin metadata: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.js
 | design-tokens | `skills/design-tokens/` | Three-tier token architecture; CSS vars, Tailwind v3/v4, Style Dictionary, JS ESM output formats |
 | figma-to-code | `skills/figma-to-code/` | Five-phase workflow using Figma MCP tools; references design-tokens skill for token mapping |
 | accessibility-audit | `skills/accessibility-audit/` | WCAG 2.1 AA audit with prioritized remediation output; contrast script; covers React, HTML, CSS tokens, Eleventy |
+| organizational-docs-writer | `skills/organizational-docs-writer/` | Creates/updates org docs (README, API docs, user guides, changelogs, PRDs) with consistent formatting via subagent dispatch; templates in `assets/templates/`; writing standards in `references/cas-writing-standards.md` |
 
 ### Proposed (not yet implemented)
 
