@@ -1,6 +1,6 @@
-# Productdesigner
+# Product Design Skills
 
-Productdesigner is a complete set of skills for incorporating into your agentic workflow to assist in designing and creating products.
+Productdesign-skills is a complete set of skills for incorporating into your agentic workflow to assist in designing and creating products.
 
 ## What's Included
 
@@ -20,7 +20,7 @@ Productdesigner is a complete set of skills for incorporating into your agentic 
 To install this marketplace, open Claude Code and enter the following:
 
 ```bash
-/plugin marketplace add https://github.com/Product-Designs/productdesign-marktplace.git
+/plugin marketplace add https://github.com/AdamJ/productdesign-marktplace.git
 ```
 
 1. Once installed, enter the `/plugin` command to manage Claude Code plugins.
@@ -40,4 +40,4 @@ Start up a new session and ask for something that should trigger the agent to ut
 
 All skills are subject to their original licensing, where applicable.
 
-Original skills copyright 2026 [Adam J. Jolicoeur](mailto:adam@productdesigns.net)
+Original skills copyright 2026 [Adam J. Jolicoeur](mailto:contact@adamjolicoeur.com)

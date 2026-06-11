@@ -1,4 +1,4 @@
-# productdesigner — Agent Notes
+# productdesign-skills — Agent Notes
 
 ## What this repo is
 

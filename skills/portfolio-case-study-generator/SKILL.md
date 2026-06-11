@@ -1,20 +1,12 @@
 ---
 name: portfolio-case-study-writer
 description: >
-  Write and refine portfolio case studies for Adam Jolicoeur, a Lead Product Designer and PM
-  targeting founding designer / startup designer roles at early-stage companies. Use this skill
-  whenever Adam asks to write, draft, outline, revise, or workshop a portfolio piece, case study,
-  project story, or "write-up" about any project — personal or professional. Also trigger when
-  Adam says things like "help me tell the story of X", "I want to add Y to my portfolio", or
-  "how should I frame this project." This skill encodes his voice, narrative structure, and
-  audience so output lands on-target without extensive back-and-forth.
+  Write and refine portfolio case studies for Adam Jolicoeur, a Lead Product Designer and PM targeting founding designer / startup designer roles at early-stage companies. Use this skill whenever Adam asks to write, draft, outline, revise, or workshop a portfolio piece, case study, project story, or "write-up" about any project — personal or professional. Also trigger when Adam says things like "help me tell the story of X", "I want to add Y to my portfolio", or "how should I frame this project." This skill encodes his voice, narrative structure, and audience so output lands on-target without extensive back-and-forth.
 ---
 
 # Portfolio Case Study Writer
 
-This skill produces portfolio case studies for Adam that are ready for publication at
-adamjolicoeur.com/portfolio/. The audience is **design hiring managers at early-stage startups**
-— typically a founding team evaluating whether Adam can own the full design function from zero.
+This skill produces portfolio case studies for Adam that are ready for publication at adamjolicoeur.com/portfolio/. The audience is **design hiring managers at early-stage startups** — typically a founding team evaluating whether Adam can own the full design function from zero.
 
 ---
 
