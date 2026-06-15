@@ -1,21 +1,12 @@
 {
   "name": "productdesign-skills",
-  "description": "A set of skills to assist with product design tasks and workflows, including best practices, templates, and guidance for creating high-quality designs.",
-  "version": "4.0.0",
+  "description": "A collection of Claude Code skills for product design and development workflows.",
+  "version": "2.0.0",
   "author": {
     "name": "Adam Jolicoeur",
     "email": "contact@adamjolicoeur.com"
   },
   "homepage": "https://github.com/AdamJ/productdesign-skills",
   "repository": "https://github.com/AdamJ/productdesign-skills",
-  "license": "MIT",
-  "keywords": [
-    "skills",
-    "design",
-    "documentation",
-    "collaboration",
-    "best-practices",
-    "workflows",
-    "mcp"
-  ]
+  "license": "MIT"
 }
