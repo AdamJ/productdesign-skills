@@ -1,42 +1,60 @@
 # Product Design Skills
 
-Productdesign-skills is a complete set of skills for incorporating into your agentic workflow to assist in designing and creating products.
+Productdesign-skills is a collection of Claude Code skills for product design and development workflows. Each skill is individually installable via the [productdesigner marketplace](https://github.com/AdamJ/productdesign-marketplace).
 
 ## What's Included
 
 | Skill | Description | Category |
 | --- | --- | --- |
-| [Frontend design](/skills/frontend-design/) | A plugin to assist with frontend design tasks and workflows. | Design |
-| [Interactive Architecture Diagram](/skills/interactive-diagram/) | A plugin to generate interactive architecture diagrams based on user input. | Architecture |
-| [MCP Builder](/skills/mcp-builder/) | A plugin to guide the user in creating high-quality MCPs with best practices and templates. | Development |
-| [MCP Server Scaffolding](/skills/mcp-server-scaffolding/) | A plugin to scaffold MCP server projects based on user input. | Development |
-| [Portfolio Case Study Generator](/skills/portfolio-case-study-generator/) | Generate a case study based off of your current code base. | Documentation |
-| [Synching Project Documentation](/skills/syncing-project-documentation/) | Sync your docs, README, and CLAUDE files after implementing a feature or fix. | Documentation |
-| [Accessibility Audit](/skills/accessibility-audit/) | Audit components, pages, and designs against WCAG 2.1 AA and output a prioritized remediation checklist with code-level fixes. | Design |
-| [Organizational Docs Writer](/skills/organizational-docs-writer/) | Creates and updates organizational documents with consistent formatting, visual identity, and house style. | Documentation |
+| [Frontend Design](https://github.com/AdamJ/productdesign-skills/blob/main/skills/frontend-design) | Create distinctive, production-grade frontend interfaces with high design quality. | Design |
+| [Accessibility Audit](https://github.com/AdamJ/productdesign-skills/blob/main/skills/accessibility-audit) | Audit components and pages against WCAG 2.1 AA; outputs a prioritized remediation checklist with code-level fixes. | Design |
+| [Interactive Architecture Diagram](https://github.com/AdamJ/productdesign-skills/blob/main/skills/interactive-diagram) | Generate interactive HTML architecture diagrams with zoom, click-through, and detail panels. | Development |
+| [MCP Builder](https://github.com/AdamJ/productdesign-skills/blob/main/skills/mcp-builder) | Guide for creating high-quality MCP servers in Python (FastMCP) or TypeScript (MCP SDK). | Development |
+| [MCP Server Scaffolding](https://github.com/AdamJ/productdesign-skills/blob/main/skills/mcp-server-scaffolding) | Scaffold MCP server projects with correct schema, validation, and deployment configuration. | Development |
+| [Portfolio Case Study Writer](https://github.com/AdamJ/productdesign-skills/blob/main/skills/portfolio-case-study-generator) | Write and refine portfolio case studies for designers and PMs targeting founding or startup roles. | Documentation |
+| [Syncing Project Documentation](https://github.com/AdamJ/productdesign-skills/blob/main/skills/synching-project-documentation) | Sync README, CLAUDE.md, and CHANGELOG after implementing features or fixes. | Documentation |
+| [Organizational Docs Writer](https://github.com/AdamJ/productdesign-skills/blob/main/skills/organizational-docs-writer) | Create and update org documents with consistent formatting and house style. | Documentation |
 
 ## Installation
 
-To install this marketplace, open Claude Code and enter the following:
+Skills are distributed via the [productdesigner marketplace](https://github.com/AdamJ/productdesign-marketplace). Add the marketplace first:
 
-```bash
-/plugin marketplace add https://github.com/AdamJ/productdesign-marktplace.git
+```
+/plugin marketplace add AdamJ/productdesign-marketplace
 ```
 
-1. Once installed, enter the `/plugin` command to manage Claude Code plugins.
-2. Cycle to the "Marketplaces" tab and key down to the **productdesign-marketplace**.
-  a. Verify that auto-updates are enabled.
-3. Enter "Browser Plugins" to review available plugins.
-  a. If you have already installed plugins from this marketplace, be sure to enter the "Update marketplace" option first, as skills may have been added or changed.
-4. If you ever need to disable/remove the **productdesign-marketplace**, you may do so by selecting "Remove marketplace" and following any subsequent prompts.
+Then install individual skills — no need to take everything at once:
+
+```
+/plugin install frontend-design@productdesigner
+/plugin install accessibility-audit@productdesigner
+/plugin install interactive-arch-diagram@productdesigner
+/plugin install mcp-builder@productdesigner
+/plugin install mcp-server-scaffolding@productdesigner
+/plugin install portfolio-case-study-writer@productdesigner
+/plugin install syncing-project-documentation@productdesigner
+/plugin install organizational-docs-writer@productdesigner
+```
 
 ### Verify Installation
 
-Start up a new session and ask for something that should trigger the agent to utilize a skill (e.g. "sync my documentation"). The agent should automatically select the proper skill for the request.
+Start a new session and make a request that should trigger a skill (e.g. "audit this component for accessibility"). Claude Code will automatically invoke the appropriate skill based on your task context.
+
+## Development Conventions
+
+- Each skill requires at minimum a `SKILL.md` with frontmatter (`name`, `description`)
+- Reference files go in `skills/<name>/references/` and are linked from `SKILL.md`
+- The `description` frontmatter field is the trigger — write it to match natural language phrases
+- New skills should cross-reference related skills where relevant (e.g. `figma-to-code` → `design-tokens`)
+- Any new skills or updates should bump the `version` in `.claude-plugin/plugin.json`:
+  - New skill → major increment
+  - Skill update → minor increment
+  - README or CLAUDE.md change → patch increment
+- New skills must be added to the table in this README
 
 ## Licensing
 
-> MIT License - [LICENSE](LICENSE)
+> MIT License — [LICENSE](https://github.com/AdamJ/productdesign-skills/blob/main/LICENSE)
 
 All skills are subject to their original licensing, where applicable.
 
