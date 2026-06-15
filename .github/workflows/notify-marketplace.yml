@@ -39,6 +39,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v4.0.1
         with:
           token: ${{ secrets.MARKETPLACE_DISPATCH_TOKEN }}
-          repository: ComponentAssemblySystems/cas-plugins-official
+          repository: AdamJ/productdesign-marketplace
           event-type: skills-released
           client-payload: '{"version": "${{ steps.version.outputs.version }}"}'

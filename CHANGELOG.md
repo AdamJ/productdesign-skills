@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-## [4.0.0] - 2026-05-27
+## [2.0.0] - 2026-05-27
 
 ### Added
 
@@ -14,14 +14,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
   — `skills/organizational-docs-writer/SKILL.md`, `skills/organizational-docs-writer/assets/templates/`, `skills/organizational-docs-writer/references/cas-writing-standards.md`
   (four-step workflow: collect metadata → load template + writing standards → dispatch docs-writer subagent → verify output)
 
-## [3.0.0] - 2026-05-07
+## [1.0.2] - 2026-05-07
 
 ### Added
 
 - `accessibility-audit` skill — WCAG 2.1 AA audit with prioritized remediation checklist; contrast ratio script; covers React, HTML, CSS tokens, Eleventy
   — `skills/accessibility-audit/`
 
-## [2.0.0] - 2026-04-30
+## [1.0.1] - 2026-04-30
 
 ### Added
 
