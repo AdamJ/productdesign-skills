@@ -15,6 +15,7 @@ Plugin metadata: `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.js
 
 | Skill | Directory | Notes |
 |-------|-----------| ----- |
+| app-store-connect | `skills/app-store-connect/` | |
 | frontend-design | `skills/frontend-design/` | |
 | interactive-diagram | `skills/interactive-diagram/` | |
 | mcp-builder | `skills/mcp-builder/` | |

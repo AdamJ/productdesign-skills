@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+## [2.1.0] - 2026-09-11
+
+### Added
+
+- `app-store-connect` skill - prepares an iOS, iPadOS, or macOS app's App Store assets and metadata for submission.
+  - `skills/app-store-connect/SKILL.md`
+
 ## [2.0.0] - 2026-05-27
 
 ### Added

@@ -8,6 +8,7 @@ Productdesign-skills is a collection of Claude Code skills for product design an
 | --- | --- | --- |
 | [Frontend Design](https://github.com/AdamJ/productdesign-skills/blob/main/skills/frontend-design) | Create distinctive, production-grade frontend interfaces with high design quality. | Design |
 | [Accessibility Audit](https://github.com/AdamJ/productdesign-skills/blob/main/skills/accessibility-audit) | Audit components and pages against WCAG 2.1 AA; outputs a prioritized remediation checklist with code-level fixes. | Design |
+| [App Store Connect](https://github.com/AdamJ/productdesign-skills/blob/main/skills/app-store-connect-audit) | Prepare an iOS, iPadOS, or macOS app's App Store assets and metadata for submission. | Development |
 | [Interactive Architecture Diagram](https://github.com/AdamJ/productdesign-skills/blob/main/skills/interactive-diagram) | Generate interactive HTML architecture diagrams with zoom, click-through, and detail panels. | Development |
 | [MCP Builder](https://github.com/AdamJ/productdesign-skills/blob/main/skills/mcp-builder) | Guide for creating high-quality MCP servers in Python (FastMCP) or TypeScript (MCP SDK). | Development |
 | [MCP Server Scaffolding](https://github.com/AdamJ/productdesign-skills/blob/main/skills/mcp-server-scaffolding) | Scaffold MCP server projects with correct schema, validation, and deployment configuration. | Development |
