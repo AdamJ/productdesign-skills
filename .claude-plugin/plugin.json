@@ -1,7 +1,7 @@
 {
   "name": "productdesign-skills",
   "description": "A collection of Claude Code skills for product design and development workflows.",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "author": {
     "name": "Adam Jolicoeur",
     "email": "contact@adamjolicoeur.com"
